@@ -10,7 +10,7 @@ public class Increment{
   int Inc_index = 1;
   int a = 1;//Color base v1
   int b = 0;//Color base v2
-  int c = 0;//Color base v3
+  int c = 2;//Color base v3
   
   public Increment(){}
   
@@ -41,7 +41,7 @@ public class Increment{
       
     }else{
 
-      if(a <= li)  incremento *= -1;
+      if(a <= li)  incremento *= -5;
       a += incremento;
     }
    
