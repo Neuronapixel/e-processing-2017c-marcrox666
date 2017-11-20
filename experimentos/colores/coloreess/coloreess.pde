@@ -37,7 +37,7 @@ public class Increment{
           
         }else c += incremento;
   
-      }else b += incremento;
+      }else b = incremento;
       
     }else{
 
@@ -51,7 +51,7 @@ public class Increment{
     println("c : " + c);
     
     noStroke();//Transparencia
-    if(index == 255 || index == -1) Inc_index *= -1;
+    if(index == 200 || index == -1) Inc_index *= -1;
     
     switch(Select){
       
@@ -97,14 +97,14 @@ void setup(){
 
 void draw(){
     
-  fill(0,0,0,1);
-  rect(0,0,500,500);
+  fill(0,0,10,5);
+  ellipse(0,0,500,500);
 
   Color1.fullColor(6,255);
-  ellipse(random(500),random(500),30,30);
+  ellipse(random(100),random(1000),30,30);
   
   Color2.fullColor(5,255);
-  rect(random(500),random(500),10,10);
+  rect(random(1000),random(500),10,10);
 
 
 }
