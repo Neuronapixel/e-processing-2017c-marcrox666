@@ -69,10 +69,10 @@ void breakSegments(){
   
 
 void setup() {
-  size(700, 600);
-  background(150);
-  strokeWeight(1);
-  fill(255);
+  size(800, 900);
+  background(100);
+  strokeWeight(2);
+  fill(230);
   seg.add(new Line((width-len)/2, height-50, (width-len)/2+len, height-50));
   start = millis();
 }
@@ -83,9 +83,9 @@ void draw() {
   if(p>=1){
     prev = seg;
   }
-  background(5);
+  background(20);
   textSize(40);
-  text("LEVEL : "+level, 250,70);
+  text("nivel: "+level, 250,70);
   stroke(0, 100, 240);
   int i;
   for (i=0; len>0 && i<prev.size(); i++) {
@@ -111,6 +111,8 @@ void draw() {
   }
 }
 
-void mouseClicked() {
+void   
+  
+mouseWheel() {
   breakSegments();
 }
