@@ -1,7 +1,7 @@
 //------------Variables---------------------
-int filas = 20;
-int columnas = 20;
-int bs = 20;
+int filas = 200;
+int columnas = 200;
+int bs = 200;
 ArrayList<Integer> posX = new ArrayList<Integer>();
 ArrayList<Integer> posY = new ArrayList<Integer>();
 
@@ -16,8 +16,8 @@ boolean gameOver=true;
 boolean modeEpilepsia=false;
 //------------Inicialización----------------
 void setup() {
-  size(400, 400);
-  frameRate(10);
+  size(400, 800);
+  frameRate(20);
   //IniSnake
   posX.add(10);
   posY.add(10);
@@ -27,9 +27,9 @@ void setup() {
 //------------Main--------------------------
 void draw() {
   if (modeEpilepsia) {
-    background((int) random(0, 255), (int) random(0, 255), (int) random(0, 255));
+    background((int) random(0, 200), (int) random(0, 255), (int) random(0, 255));
   } else {
-    background(255);//Fondo Blanco
+    background(200);//Fondo Blanco
   }
   if (gameOver) {
     fill(0);
@@ -77,7 +77,7 @@ void draw() {
       fill(0, 0, 255);
     }
     for (int i = 0; i < posX.size(); i++) {
-      rect(posX.get(i)*bs, posY.get(i)*bs, bs, bs);
+      ellipse(posX.get(i)*bs, posY.get(i)*bs, bs, bs);
     }
   }
 }
