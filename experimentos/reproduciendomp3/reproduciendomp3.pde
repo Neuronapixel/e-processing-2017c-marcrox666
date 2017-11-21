@@ -15,13 +15,13 @@ AudioSample snare; //  Hacemos un llamado al paquete AudioSample contenido en mi
 
 void setup()
 {
-  size( 512, 200 );        //  Tamaño de la ventana
+  size( 800, 800 );        //  Tamaño de la ventana
   minim = new Minim(this); //  instanciamos la libreria minim para poder usarla en el programa.
   
   //  Cargamos dos archivo de audio en formato mp3.
   kick = minim.loadSample("big.mp3"  // nombre del archivo de Audio
                             , 512); // Buffer size
-  snare = minim.loadSample("SD.wav", 512);
+  snare = minim.loadSample("muelas.mp3", 512);
   smooth();
 }
 
