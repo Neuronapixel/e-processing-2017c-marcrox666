@@ -16,7 +16,7 @@ boolean gameOver=true;
 boolean modeEpilepsia=false;
 //------------Inicialización----------------
 void setup() {
-  size(400, 800);
+  size(400, 400);
   frameRate(20);
   //IniSnake
   posX.add(10);
@@ -32,9 +32,9 @@ void draw() {
     background(200);//Fondo Blanco
   }
   if (gameOver) {
-    fill(0);
+    fill(10);
     textSize(20);
-    text("presiona teclado.", 100, height/2);
+    text("presiona espacio.", 100, height/2);
   } else {
     //Grid
     fill(0);
@@ -72,7 +72,7 @@ void draw() {
     rect(appleX*bs, appleY*bs, bs, bs);
     //drawSnake
     if (modeEpilepsia) {
-      fill((int) random(0, 255), (int) random(0, 255), (int) random(0, 255));
+      fill((int) random(0, 200), (int) random(0,150), (int) random(0, 255));
     } else {
       fill(0, 0, 255);
     }
