@@ -1,7 +1,7 @@
 //------------Variables---------------------
-int filas = 200;
-int columnas = 200;
-int bs = 200;
+int filas = 40;
+int columnas = 40;
+int bs = 40;
 ArrayList<Integer> posX = new ArrayList<Integer>();
 ArrayList<Integer> posY = new ArrayList<Integer>();
 
@@ -34,7 +34,7 @@ void draw() {
   if (gameOver) {
     fill(0);
     textSize(20);
-    text("Press space to continue.", 100, height/2);
+    text("presiona teclado.", 100, height/2);
   } else {
     //Grid
     fill(0);
