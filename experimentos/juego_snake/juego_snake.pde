@@ -29,12 +29,12 @@ void draw() {
   if (modeEpilepsia) {
     background((int) random(0, 200), (int) random(0, 255), (int) random(0, 255));
   } else {
-    background(200);//Fondo Blanco
+    background(150);//Fondo Blanco
   }
   if (gameOver) {
     fill(10);
     textSize(20);
-    text("presiona espacio.", 100, height/2);
+    text("presiona z.", 100, height/2);
   } else {
     //Grid
     fill(0);
@@ -88,7 +88,7 @@ void keyPressed() {
   if (key=='s')dir=1;
   if (key=='a')dir=2;
   if (key=='d')dir=3;
-  if (key==' ') {
+  if (key=='z') {
     gameOver=false;
     posX.clear();
     posY.clear();
